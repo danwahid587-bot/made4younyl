@@ -38,51 +38,7 @@
 </head>
 
 <body>
-    <h2 id="greeting"></h2>
-
-<style>
-  #greeting {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-</style>
-
-<script>
-  // Daftar ucapan yang akan berganti
-  const greetings = [
-    "Happy Birthday ❤️",
-    "Selamat Ulang Tahun Nilna 🎂",
-    "Semoga panjang umur dan sehat selalu 🌸",
-    "Wish you all the best 💫"
-  ];
-
-  let index = 0;
-  const greetingElement = document.getElementById("greeting");
-
-  function changeGreeting() {
-    // Fade out
-    greetingElement.style.opacity = 0;
-
-    setTimeout(() => {
-      // Ganti teks
-      greetingElement.textContent = greetings[index];
-      // Fade in
-      greetingElement.style.opacity = 1;
-      // Geser ke ucapan berikutnya
-      index = (index + 1) % greetings.length;
-    }, 1000); // jeda 1 detik sebelum ganti teks
-  }
-
-  // Jalankan pertama kali
-  changeGreeting();
-  // Ubah otomatis setiap 4 detik
-  setInterval(changeGreeting, 4000);
-</script>
-
+   
     <button id="langSwitchBtn"
         style="display:none;top:20px;right:150px;z-index:10000004;padding:8px 16px;border-radius:8px;background:#fff;color:#222;border:1px solid #dadce0;cursor:pointer;">
         EN/VI
